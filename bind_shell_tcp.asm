@@ -3,6 +3,7 @@
 ; Default port = 31337
 ; 
 ; Tested on: 
+; Ubuntu 17.04
 ; Linux 4.10.0-42-generic i686
 ; 
 ; This has been created for completing the requirements of the 

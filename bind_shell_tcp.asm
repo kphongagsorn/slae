@@ -3,7 +3,7 @@
 ; Default port = 31337
 ; 
 ; Tested on: 
-; Linux osboxes 4.10.0-42-generic #46-Ubuntu SMP Mon Dec 4 14:36:05 UTC 2017 i686 i686 i686 GNU/Linux
+; Linux 4.10.0-42-generic i686
 ; 
 ; This has been created for completing the requirements of the 
 ; SecurityTube Linux Assembly Expert certification: 

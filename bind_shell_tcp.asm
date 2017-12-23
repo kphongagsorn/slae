@@ -9,8 +9,11 @@
 ; SecurityTube Linux Assembly Expert certification: 
 ; http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/
 ;  
-; Student ID: SLAE-966 
-; 
+; Student ID: SLAE-966
+;
+; References: 
+; Hacking: The Art of Exploitation by Jon Erickson
+; http://man7.org/linux/man-pages/man2/
 
 global _start
 section .text

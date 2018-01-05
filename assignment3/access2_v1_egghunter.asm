@@ -1,4 +1,3 @@
-; Tested on:
 global _start:
 section .text
  

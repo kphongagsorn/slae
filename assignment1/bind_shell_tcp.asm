@@ -1,21 +1,3 @@
-;
-; Default ip address = 0.0.0.0
-; Default port = 31337
-; 
-; Tested on: 
-; Ubuntu 17.04
-; Linux 4.10.0-42-generic i686
-; 
-; This has been created for completing the requirements of the 
-; SecurityTube Linux Assembly Expert certification: 
-; http://securitytube-training.com/online-courses/securitytube-linux-assembly-expert/
-;  
-; Student ID: SLAE-966
-;
-; References: 
-; Hacking: The Art of Exploitation by Jon Erickson
-; http://man7.org/linux/man-pages/man2/
-
 global _start
 section .text
 

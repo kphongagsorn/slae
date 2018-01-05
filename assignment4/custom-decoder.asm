@@ -12,14 +12,11 @@ decoder:
 	mov cl, 25
 
 decode:	
-	; not decode
-	not byte [esi]
-	; xor decode 			
-	xor byte [esi], 0xBB
-	; not decode
-	not byte [esi]
-	; xor decode 			
-	xor byte [esi], 0xAA
+	
+	not byte [esi]		; not decode
+	xor byte [esi], 0xBB	; xor decode
+	not byte [esi]		; not decode		
+	xor byte [esi], 0xAA	; xor decode 
 	inc esi
 	loop decode
 
